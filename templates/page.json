@@ -6,9 +6,16 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "16605127983265d016": {
+      "type": "title-test",
+      "settings": {
+        "test-ref": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16605127983265d016"
   ]
 }
