@@ -1,16 +1,25 @@
 <h1>test</h1>
 
-
 {% schema %}
+{
+  "name": "Test Ref",
+  "settings": [
     {
-        "name": "test ref",
-        "settings": [
-            {
-                "id": "test-ref",
-                "type": "text",
-                "label": "This is a test"
-            }
-        ],
-        "templates": ["index"]
+      "id": "test-ref",
+      "type": "text",
+      "label": "This is a test"
     }
+  ],
+  "templates": [
+    "index",
+    "page",
+    "product"
+  ],
+  "presets": [
+    {
+      "name": "Test Ref",
+      "category": "ref"
+    }
+  ]
+}
 {% endschema %}
