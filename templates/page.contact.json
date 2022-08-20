@@ -9,6 +9,7 @@
     },
     "form": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -19,7 +20,6 @@
     },
     "1660516120628ca55b": {
       "type": "contact-form-bootstrap",
-      "disabled": true,
       "settings": {
         "heading": "Contact form bootstrap"
       }
