@@ -1,40 +1,52 @@
-{{ 'section-contact-form-bootstrap-custom.css' | asset_url | stylesheet_tag }}
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
 <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
   <div class="mb-3">
     <label
       for="exampleFormControlInput1"
-      class="form-label"
+      class="contact-form-label"
       >Name</label
     >
     <input
       type="text"
-      class="form-control form-control-lg"
+      class="form-control form-control-lg contact-input-field"
       id="exampleFormControlInput1"
     >
   </div>
   <div class="mb-3">
     <label
       for="exampleFormControlInput2"
-      class="form-label"
+      class="contact-form-label"
       >Email address</label
     >
     <input
       type="email"
-      class="form-control form-control-lg"
+      class="form-control form-control-lg contact-input-field"
       id="exampleFormControlInput2"
       placeholder="name@example.com"
     >
   </div>
   <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+    <label
+      for="exampleFormControlInput2"
+      class="contact-form-label"
+      >Phone Number</label
+    >
+    <input
+      type="email"
+      class="form-control form-control-lg contact-input-field"
+      id="exampleFormControlInput2"
+    >
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="contact-form-label">Comment</label>
     <textarea
-      class="form-control"
+      class="form-control contact-textarea-field"
       id="exampleFormControlTextarea1"
-      rows="10"
+      rows="8"
     ></textarea>
   </div>
-  <button type="button" class="btn btn-primary btn-lg">Send</button>
+  <button type="submit" class="bootstrap-custom-btn">Send</button>
 </div>
 
 {% schema %}

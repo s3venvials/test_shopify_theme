@@ -1,3 +1,10 @@
+.contact {
+  border: 1px solid #CCC;
+  padding: 3em;
+  border-radius: 1em;
+  box-shadow: 6px 8px 4px #575757;
+}
+
 .contact img {
   max-width: 100%;
 }
@@ -14,6 +21,24 @@
   margin-bottom: 1.5rem;
 }
 
+.contact-input-field {
+  height: 4rem;
+  font-size: large;
+  border-radius: 2rem;
+}
+
+.contact-textarea-field {
+  font-size: large;
+  border-radius: 2rem;
+  padding: 0.7em;
+}
+
+.contact-form-label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: large;
+}
+
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;
@@ -22,6 +47,16 @@
 
 .contact__button {
   margin-top: 3rem;
+}
+
+.bootstrap-custom-btn {
+  padding: 1.2rem 4rem;
+  font-size: 1.75rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  border-radius: 2rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -35,5 +70,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .bootstrap-custom-btn {
+    padding: 1rem 2rem;
+    font-size: 1.50rem;
+    width: 100%;
+  }
+
+  .contact {
+    border: none;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: none;
   }
 }
